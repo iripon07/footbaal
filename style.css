@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top Parts Styles  */
+
+.container {
+  background-color: #2d25a0;
+}
+
+.hero-container {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-container img:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #e02c6d;
+
+  color: white;
+  text-decoration: none;
+  padding: 16px 30px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-image: linear-gradient(tomato, #e02c6d);
+}
+
+.button > i {
+  padding-left: 10px;
+}
+
+/* ---------------------
+main Part style 
+-----------------------*/
+
+main {
+  margin-top: 70px;
+}
+
+.players-part {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.players {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+
+.player {
+  border-radius: 5px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img {
+  padding: 15px 15px 0px 15px;
+  width: 100%;
+  height: auto;
+}
+
+.player h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.player p {
+  font-size: 16px;
+  color: #6c6c6c;
+}
+
+
+/* Recent Parts Styles  */
+
+.recent {
+  grid-column-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.recent-highlights {
+
+  padding: 100px 20px;
+}
+
+.recent-highlights h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.recent iframe {
+  width: 100%;
+  max-height: 200px;
+}
+
+/* Scorer Parts Styles  */
+.top-scorer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-scorer img {
+  width: 100%;
+  height: auto;
+}
+
+.top-scorer .text {
+  text-align: center;
+  padding: 20px;
+}
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text h4 {
+  font-size: 20px;
+}
+.top-scorer h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+.socrer-grid {
+  display: grid;
+  padding: 20px;
+  
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.socrer {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlights Parts Starts  */
+
+.match {
+  margin: auto;
+  max-width: 1200px;
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 66px;
+}
+
+.match img {
+  width: 100%;
+  height: auto;
+}
+
+.title-1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #0a0826;
+  margin-bottom: 8px;
+}
+
+.left-side p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #6c6c66;
+  margin-top: 0px;
+  margin-bottom: 44px;
+}
+
+/* -------------
+Footer style
+------------------- */
+
+.icon-image {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-image img {
+  max-width: 445px;
+  height: auto;
+  width: 100%;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+.social-icon i {
+  color: #969bab;
+  padding: 7px;
+  font-size: 35px;
+}
+
+.last-part p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+}
+
+/* ---------------
+Responsive For Mobile 
+---------------- */
+
+@media only screen and (max-width: 768px) {
+  .hero-container,
+  .players,
+  .recent,
+  .socrer-grid,
+  .match {
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .title{
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .title-1{
+    font-size: 32px;
+    line-height: 50px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .hero-container,
+  .players,
+  .recent,
+  .socrer-grid,
+  .match {
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+.hero-container img{
+  padding-top: 30px;
+}
+
+}
